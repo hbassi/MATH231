@@ -1,0 +1,118 @@
+\documentclass[11pt,letterpaper]{article}
+%\usepackage[secthm,mdthm,simplethm]{beel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx, tcolorbox}
+\usepackage[margin = 1in, top = 0.8in,bottom = 0.8in]{geometry}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{array,comment,enumitem}
+\usepackage{mathtools,thmtools}
+\usepackage{multicol,tabto,setspace}
+\usepackage{tikz,pgfplots,tikz-cd,venndiagram,forest}
+\usepackage[all]{xy}
+\usepackage{listings,fancyhdr}
+\usepackage{bropd}
+\pagestyle{fancy}
+\usepackage[utf8]{inputenc}
+\def\code#1{\texttt{#1}}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\headheight = 15 pt
+\lhead{Hardeep Bassi}
+\rhead{Numerical Analysis}
+\cfoot{\thepage}
+\pgfplotsset{compat = 1.15}
+\usetikzlibrary{fadings}
+
+\hbadness = 10000
+\tolerance = 10000
+\setlength{\parindent}{0pt}
+
+
+\renewcommand{\bar}{\overline}
+\renewcommand{\b}{\mathbb}
+\renewcommand{\c}{\mathcal}
+\newcommand{\s}{\mathscr}
+\newcommand{\argmax}{\operatorname{argmax}}
+\newcommand{\argmin}{\operatorname{argmin}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\range}{\operatorname{Range}}
+\newcommand{\proj}{\operatorname{Proj}}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\begin{document}
+	\begin{center}
+		{\Large \textbf{MATH 231 Homework 1}}
+	\end{center}
+\begin{enumerate}
+	\item Write the following MATLAB functions for the Jacobi and Gauss-Seidel methods to solve a general
+$n$ $x$ $n$ system \code{A*x=b}:
+\begin{itemize}
+    \item \code{function [final sol,sols]} = \code{Jacobi(A,b,x0,niter)}
+    \item \code{function [final sol,sols]} = \code{GaussSeidel(A,b,x0,niter)}
+\end{itemize}
+Here, \code{final\_sol} is the iterative solution after \code{niter} iterations starting with initial guess \code{x0} and \code{sols}
+is the sequence of iterative solutions $\{x^{(0)}, x^{(1)}, ... , x^{(niter)}\}$ ($n$ $x$ $(niter+1)$ matrix).
+
+\textbf{Solution}:
+\begin{center}
+    
+
+\begin{lstlisting}
+JACOBI METHOD
+paste code here
+
+\end{lstlisting}
+
+\begin{lstlisting}
+GAUSS-SEIDEL
+paste code here
+\end{lstlisting}
+\end{center}
+%insert commentary here
+asdfiuhasdfiusda
+
+    \item For each method, validate your implementation by using a $6$ $x$ $6$ system (convergent case).
+    \begin{itemize}
+        \item Plot relative residual errors versus iteration number $k$ (using semi-log plot).
+        %insert plot here
+        \includegraphics[]{}
+        \item Compute the spectral radius $\rho$ of the iteration matrix and plot $\rho^{k}$ versus $k$ (compare the slopes).
+        %inset plot here
+        \includegraphics[]{}
+    \end{itemize}
+    %insert commentary here or code here
+    asdasd
+    
+    \item For each method, observe the divergent case.
+    \begin{itemize}
+        \item Plot relative residual errors versus iteration number $k$ (using semi-log plot).
+        %inset plot here
+        \includegraphics[]{}
+        \item Compute the spectral radius $\rho$ of the iteration matrix and plot $\rho^{k}$ versus $k$ (compare the slopes).
+        %inset plot here
+        \includegraphics[]{}
+    \end{itemize}
+    %insert commentary here
+    asdasd
+
+\end{enumerate}
+\end{document}
