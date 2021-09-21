@@ -1,5 +1,6 @@
 function [final_sol,sols] = SOR(A,b,x0,niter,omega)
 x = x0;
+sols = [x];
 n = size(A);
 for k = 1:niter
     for i= 1:n
