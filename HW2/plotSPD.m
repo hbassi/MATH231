@@ -81,10 +81,8 @@ semilogy(0:niter, errs7)
 hold off
 
 
-
-
 xlabel("Iteration number $k$", 'Interpreter', 'latex')
 title('Relative residual error for differing $\omega$ vs iteration number', 'Interpreter', 'latex')
 legend('$\omega = 0.1$', '$\omega = 0.3$', '$\omega = 0.5$', '$\omega = 1.1$', '$\omega = 1.3$', '$\omega = 1.7$','$\omega = 1.9$', 'Interpreter', 'latex')
-%saveas(gcf, 'divergent.png')
+saveas(gcf, 'comparing_omega.png')
 
