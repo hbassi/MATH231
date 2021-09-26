@@ -1,0 +1,112 @@
+\documentclass[11pt,letterpaper]{article}
+%\usepackage[secthm,mdthm,simplethm]{beel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx, tcolorbox}
+\usepackage[margin = 1in, top = 0.8in,bottom = 0.8in]{geometry}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{array,comment,enumitem}
+\usepackage{mathtools,thmtools}
+\usepackage{multicol,tabto,setspace}
+\usepackage{tikz,pgfplots,tikz-cd,venndiagram,forest}
+\usepackage[all]{xy}
+\usepackage{listings,fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{bropd}
+\pagestyle{fancy}
+\usepackage[utf8]{inputenc}
+\def\code#1{\texttt{#1}}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+  language=MATLAB,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\headheight = 15 pt
+\lhead{Hardeep Bassi}
+\rhead{MATH 231 HW#3}
+\cfoot{\thepage}
+\pgfplotsset{compat = 1.15}
+\usetikzlibrary{fadings}
+
+\hbadness = 10000
+\tolerance = 10000
+\setlength{\parindent}{0pt}
+
+
+\renewcommand{\bar}{\overline}
+\renewcommand{\b}{\mathbb}
+\renewcommand{\c}{\mathcal}
+\newcommand{\s}{\mathscr}
+\newcommand{\argmax}{\operatorname{argmax}}
+\newcommand{\argmin}{\operatorname{argmin}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\range}{\operatorname{Range}}
+\newcommand{\proj}{\operatorname{Proj}}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\begin{document}
+	\begin{center}
+		{\Large \textbf{MATH 231 Homework 3 MATLAB}}
+	\end{center}
+\begin{enumerate}
+
+
+	\item (a) Write a \code{MATLAB} function
+	\begin{center}
+	\code{function a = lsq(x,y,p)}
+	\end{center}
+	that finds the least-squares fit for the data point $\{ (x_1,y_1), (x_2,y_2), ... , (x_m, y_m)\}$. The retun value os the polynomial in \code{MATLAB} format; in other words, if the polynommial is \begin{center}
+	    $a_px^p + a_{p-1}x^{p-1} + ... + a_1x + a_0$,
+	\end{center}
+	then \code{a} = [$a_p$, $a_{p-1}, ..., a_2, a_1, a_0$].\\
+	(b) Set up a simple polynomial fitting problem to demonstrate that the code works properly.
+\begin{tcolorbox}
+\textbf{SOLUTION:}
+
+\begin{lstlisting}
+LEAST SQUARES METHOD
+INSERT CODE HERE
+\end{lstlisting}
+
+%insert commentary here
+adfafd
+\end{tcolorbox}
+\newpage
+
+
+
+\item asdfasdf
+  
+        \begin{tcolorbox}
+        \textbf{SOLUTION:}
+        \begin{lstlisting}
+        \end{lstlisting}
+            
+         
+        
+        %inset plot here
+        %\begin{center}
+            %\includegraphics[width=0.75\textwidth]{convergent.png}
+        %\end{center}
+    \end{tcolorbox}
+    
+
+    \newpage
+  
+\end{enumerate}
+\end{document}
