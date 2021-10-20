@@ -6,12 +6,12 @@ exactval = double(int(f(x),a,b));
 n = [1,2,3,4,5,6,7,8,9,10];
 errs = [];
 for i=1:10
-    app = trapezoid(f,a,b,n(i));
+    app = LegendreGauss(f,a,b,n(i));
     err = abs(app - exactval);
     errs = [errs err];
 end
 loglog(n, errs)
-title('loglog of Errors vs n')
+title('loglog of Errors vs n using Gauss-Legendre')
 xlabel('n')
 ylabel('error')
-saveas(gcf, '1b.png')
+saveas(gcf, '2b.png')
