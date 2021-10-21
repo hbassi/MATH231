@@ -14,19 +14,17 @@ errs2 = [];
 for i=1:10
     app = trapezoid(f,a,b,n(i));
     err = abs(app - exactval);
-    errs2 = [errs2 err];
+    errs = [errs err];
 end
 sl = @(x) x.^(-2);
 ys = sl(n);
-loglog(n, errs, 'k')
+loglog(n, errs, 'b')
 hold on
-loglog(n, errs2, 'r')
+loglog(n, ys, 'r--')
 hold off
-hold on 
-loglog(n,ys, 'g--')
-hold off
+
+loglog(n, errs)
 title('loglog of Errors vs n using Gauss-Legendre')
 xlabel('n')
 ylabel('error')
-legend('LG', 'Trapezoid','slope of -2')
 saveas(gcf, '2b.png')
