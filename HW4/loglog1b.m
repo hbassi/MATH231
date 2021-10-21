@@ -10,8 +10,14 @@ for i=1:10
     err = abs(app - exactval);
     errs = [errs err];
 end
-loglog(n, errs)
+sl = @(x) x.^(-2);
+ys = sl(n);
+loglog(n, errs, 'b')
+hold on
+loglog(n, ys, 'r--')
+hold off
 title('loglog of Errors vs n')
 xlabel('n')
 ylabel('error')
+legend('loglog', 'slope -2')
 saveas(gcf, '1b.png')

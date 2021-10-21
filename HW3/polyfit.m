@@ -20,4 +20,4 @@ hold off
 xlabel('x')
 ylabel('y')
 title('Fitted least squares solution')
-saveas(gcf, 'polyfit.png')
+%saveas(gcf, 'polyfit.png')
