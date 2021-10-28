@@ -40,5 +40,8 @@ hold off
 hold on
 loglog(dxvals, ys6)
 hold off
-
+xlabel('$\Delta$ x', 'Interpreter', 'latex')
+ylabel('error')
+title('loglog of $\Delta$ x vs error','Interpreter', 'latex')
 legend('n=2','n=4','n=6','slope 2', 'slope 4', 'slope 6')
+saveas(gcf, '1b.png')
