@@ -20,9 +20,9 @@ sl = @(x) x.^(-2);
 ys = sl(n);
 sl2 = @(x) x.^(-1);
 ys2= sl2(n);
-loglog(n, errs)
+loglog(n, errs,'ro-')
 hold on
-loglog(n,errs2)
+loglog(n,errs2, 'ko-')
 hold off
 hold on
 loglog(n,ys,'b--')
@@ -33,5 +33,5 @@ hold off
 title('loglog of Errors vs n using Gauss-Legendre and Trapezoid Rule')
 xlabel('n')
 ylabel('error')
-legend('LG', 'Trapezoid', 'slope of -2', 'slope of -1')
+legend('GL', 'Trapezoid', 'slope of -2', 'slope of -1')
 saveas(gcf, '3.png')
