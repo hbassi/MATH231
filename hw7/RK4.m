@@ -1,5 +1,5 @@
 function [tvals, yvals] = RK4(F,t0,T,y0,n)
-dt = T/n;
+dt = (T-t0)/n;
 tvals = t0:dt:T;
 yvals = zeros(n+1, length(y0));
 yvals(1,:) = y0(:);
