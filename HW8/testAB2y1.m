@@ -4,7 +4,7 @@ T=3;
 y0=1;
 yexact = @(t) exp(t-2/3*t^2);
 
-ns=[10:10:80];
+ns=[10:10:100];
 errs = [];
 errs2 =[];
 errs3 = [];
@@ -28,6 +28,15 @@ hold off
 hold on 
 loglog(ns,errs3)
 hold off
+hold on
 
+slope = @(x) x.^(-2);
+loglog(ns,slope(ns))
+hold off
+xlabel('n')
+ylabel('Error')
+title('loglog of Error versus n')
+legend('AB2', 'AB2 with Euler', 'AB2 with Midpoint', 'Slope -2')
+saveas(gcf,'2b.png')
 
 
